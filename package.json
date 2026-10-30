@@ -1,0 +1,10 @@
+{
+  "name": "fangcun-schulte-grid",
+  "version": "1.0.0",
+  "private": true,
+  "description": "中文舒尔特方格专注训练游戏",
+  "scripts": {
+    "test": "node --check app.js && node --test tests/game.test.cjs"
+  },
+  "engines": { "node": ">=22" }
+}

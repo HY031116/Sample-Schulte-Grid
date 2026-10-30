@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>方寸 · 舒尔特方格</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="app">
+<header><a class="brand" href="./"><span class="brand-icon">▦</span> 方寸 <span class="brand-en">FOCUS IN SQUARES</span></a><span class="header-note"><i></i> 给注意力，一点留白</span></header>
+<main>
+<section class="intro"><div class="eyebrow">舒尔特方格 / SCHULTE TABLE</div><h1>把注意力，放回眼前。</h1><p>按顺序寻找数字，在方寸之间，练习专注。</p></section>
+<div class="workspace">
+<section class="training" aria-label="训练区域">
+<div class="toolbar"><div class="sizes" aria-label="方格大小"><button data-size="3">3 × 3</button><button data-size="4">4 × 4</button><button data-size="5" class="selected">5 × 5</button><button data-size="6">6 × 6</button></div><button id="sound" class="icon-button" aria-label="开启声音" title="开启声音">声音：关</button></div>
+<div class="game-top"><div><span class="small-label">训练用时</span><div class="timer" id="timer">00:00<span>.00</span></div></div><div class="target-box"><span class="small-label" id="target-label">下一个数字</span><strong id="target">1</strong></div></div>
+<div class="board-wrap"><div id="board" class="board" aria-label="按从小到大的顺序点击数字"></div><div id="overlay" class="overlay" hidden><span id="overlay-icon">Ⅱ</span><h2 id="overlay-title">休息一下</h2><p id="overlay-text">准备好后，继续你的专注时刻。</p><button id="overlay-action" class="primary">继续训练</button></div></div>
+<div class="progress-row"><span id="progress-text">已找到 0 / 25</span><span id="state-text">准备就绪</span></div><div class="progress-track"><div id="progress"></div></div>
+<div class="actions"><button id="start" class="primary">开始训练 <span>↗</span></button><button id="restart" class="secondary">↻ 重新排列</button></div>
+<div class="board-tip"><span>◎</span> 视线尽量停留在中心，用余光寻找数字</div>
+</section>
+<aside>
+<section class="info-card current-card"><div class="card-heading"><span>本次训练</span><span class="tiny-tag" id="difficulty">标准</span></div><div class="stat-row"><span>方格规模</span><strong id="size-stat">5 × 5</strong></div><div class="stat-row"><span>点击失误</span><strong id="mistakes">0 <small>次</small></strong></div><div class="stat-row"><span>完成进度</span><strong id="percent">0<small>%</small></strong></div></section>
+<section class="info-card record-card"><div class="card-heading"><span>个人最佳</span><span class="record-star">✧</span></div><div id="best" class="best">— —<small>秒</small></div><p id="best-note">完成一次训练，留下你的第一笔记录。</p><div class="record-bottom">仅记录当前方格规模的成绩</div></section>
+<section class="howto"><div class="card-heading">简单三步，进入专注</div><ol><li><span>1</span><div><strong>从 1 开始</strong><p>按从小到大的顺序点击数字。</p></div></li><li><span>2</span><div><strong>保持节奏</strong><p>点错不会扣时，找到正确数字继续。</p></div></li><li><span>3</span><div><strong>挑战自己</strong><p>找到全部数字，记录本次用时。</p></div></li></ol></section>
+<div class="gentle-note">不必着急。<br>每一次专注，都算进步。</div>
+</aside></div>
+</main><footer><span>方寸之间，专注当下。</span><span>无需登录 · 成绩保存在此浏览器</span></footer>
+</div><script src="app.js"></script>
+</body></html>
