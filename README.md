@@ -19,18 +19,20 @@
 - 切换到后台时自动暂停。
 - 按方格规模分别保存个人最佳成绩。
 - 支持手机布局和键盘 Tab / Enter 操作。
+- 点击页头 English / 中文 切换语言；选择会自动保存，切换不重置训练。
 
 成绩保存在当前浏览器的 localStorage 中；清理浏览器数据会清除成绩。若浏览器限制本地文件存储，仍可正常游戏，但成绩可能无法保存。页面字体会尝试从 Google Fonts 加载，离线时使用系统字体。
 
 ## 本地开发
 
-直接编辑三个源文件并刷新页面即可：
+直接编辑源文件并刷新页面即可：
 
 | 文件 | 用途 |
 | --- | --- |
 | `index.html` | 页面结构与中文文案 |
 | `style.css` | 样式、响应式布局与动效 |
 | `app.js` | 游戏状态、计时和成绩保存 |
+| `i18n.js` | 中英翻译与语言偏好 |
 | `tests/game.test.cjs` | 无依赖的游戏逻辑回归检查 |
 
 安装 Node.js 22 或更高版本后运行：
@@ -49,7 +51,7 @@ npm test
 
 ## English
 
-A lightweight Schulte grid game for a short focus practice. The game interface is currently in Chinese; this guide explains its controls in English.
+A lightweight Schulte grid game for a short focus practice. The game supports Chinese and English. Use the language button in the header to switch at any time. Your choice is saved in this browser, and switching languages preserves the current session.
 
 ### Play
 
@@ -79,6 +81,7 @@ Edit the source files and refresh the page:
 | `index.html` | Page structure and Chinese interface text |
 | `style.css` | Styling, responsive layouts, and motion |
 | `app.js` | Game state, timer, and saved records |
+| `i18n.js` | Chinese/English translations and language preference |
 | `tests/game.test.cjs` | Dependency-free game logic regression tests |
 
 With Node.js 22 or newer, run `npm test`. No `npm install` is required. GitHub Actions runs these checks on pushes and pull requests.
@@ -91,4 +94,4 @@ Report problems in [Issues](https://github.com/HY031116/Sample-Schulte-Grid/issu
 
 ### GitHub Pages
 
-The Pages workflow tests the game and publishes only `index.html`, `style.css`, and `app.js` when changes are pushed to `main`. It can also be started manually from the Actions tab. Pull requests run checks without publishing.
+The Pages workflow tests the game and publishes only `index.html`, `style.css`, `i18n.js`, and `app.js` when changes are pushed to `main`. It can also be started manually from the Actions tab. Pull requests run checks without publishing.

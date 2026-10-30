@@ -2,6 +2,9 @@
 
 ## 未发布 / Unreleased
 
+- 游戏新增中英切换，保留当前进度并记住语言偏好。
+- Add in-game Chinese/English switching with session preservation and saved preference.
+
 - 添加中英双语 README 和玩法说明。
 - 添加 GitHub Pages 自动测试与发布工作流。
 - Add a bilingual Chinese/English README and gameplay instructions.

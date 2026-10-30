@@ -4,7 +4,9 @@
   "private": true,
   "description": "中文舒尔特方格专注训练游戏",
   "scripts": {
-    "test": "node --check app.js && node --test tests/game.test.cjs"
+    "test": "node --check i18n.js && node --check app.js && node --test tests/game.test.cjs"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  }
 }
